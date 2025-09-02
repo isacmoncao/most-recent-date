@@ -29,5 +29,15 @@ int main(void)
         return EXIT_FAILURE;
     }
 
+    if ( day1 == day2 && month1 == month2 && year1 == year2) {
+        puts("The dates are equal");
+        return EXIT_FAILURE;
+    }
+
+    if ( (year1 == year2 && ((month1 == month2 && day1 > day2) || month1 > month2) ) || year1 > year2)
+        printf("%d/%d/%d is the most recent date\n", day1, month1, year1);
+    else
+        printf("%d/%d/%d is the most recent date\n", day2, month2, year2);
+
     return EXIT_SUCCESS;
 }
