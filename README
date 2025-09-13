@@ -1,0 +1,21 @@
+most-recent-date
+================
+This program prompts for two dates and displays the most recent
+one.
+
+Building
+--------
+
+    $ make
+
+Usage example
+-------------
+
+    $ ./most-recent-date
+    $ Enter the first date(dd/mm/yyyy): 13/05/2006
+    $ Enter the second date(dd/mm/yyyy): 13/09/2025
+    $ 13/09/2025 is the most recent date
+
+License
+-------
+See LICENSE file.
